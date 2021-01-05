@@ -1,0 +1,10 @@
+﻿安装和启动服务setup.bat
+cd C:\Windows\Microsoft.NET\Framework\v4.0.30319
+installutil E:\dotnet\DotNetPractice-SVN\SignalR\SignalRWindowsService\bin\Debug\SignalRWindowsService.exe
+net start SignalRServiceChat
+
+停止和卸载服务unsetup.bat
+net stop SignalRServiceChat
+sc delete SignalRServiceChat
+
+另存为bat文件以管理员身份运行
